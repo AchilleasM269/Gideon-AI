@@ -12,9 +12,9 @@ import operator as op
 from deep_translator import GoogleTranslator
 
 # ---------------- CONFIG ----------------
-SECRET_KEY = "pineappleapplelock"   # secret keyword (kept in code, not shown)
+SECRET_KEY = "pineapple"   # secret keyword (kept in code, not shown)
 SECOND_USER_KEY = "apple"           # optional second user keyword
-SOS_CODE = "1234"                   # SOS unlock code
+SOS_CODE = "783"                   #SOS unlock code
 WEATHER_API_KEY = "676ebc8868d046dc914131347253009"
 LOCK_FILE = "lock_state.json"
 TYPE_DELAY = 0.01
@@ -306,3 +306,4 @@ if st.session_state.chat:
         else:
             # already animated previously; ensure last message shown normally (avoid duplicate)
             st.markdown(f"**Gideon:** {last_text}")
+
